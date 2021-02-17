@@ -37,8 +37,8 @@
     <!--render while on filter-->
     <div class="row mt-5" *ngIf="filter">
       <div *ngFor="let todo of filteredTodos" class="card col-lg-3 col-10 ml-4 mx-auto ml-lg-1 mt-2" (click)="isCompleted(todo.userId,todo.todoid)" style="width: 18rem;">
-          <img class="card-img-top mt-2" *ngIf="!todo.isCompleted" src="../../../assets/images/todo_card_image.jpg" alt="Card image cap">
-          <img class="card-img-top mt-2" *ngIf="todo.isCompleted" src="../../../assets/images/ischecked.jpg" alt="Card image cap">
+          <img class="card-img-top mt-2" *ngIf="!todo.isCompleted" src="./assets/images/todo_card_image.jpg" alt="Card image cap">
+          <img class="card-img-top mt-2" *ngIf="todo.isCompleted" src="./assets/images/ischecked.jpg" alt="Card image cap">
           <div class="card-body">
             <div class="d-flex">
               <h5 class="card-title">{{todo.task}}</h5>
